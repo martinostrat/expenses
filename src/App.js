@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import ExpenseItem from './components/ExpenseItem';
+import Expenses from './components/Expenses';
 
 function App() {
   const expenses = [
@@ -18,12 +19,11 @@ function App() {
 
   return (
     <div className="App">
-      <ExpenseItem
-        expenseData={expenses[0]}
+      <Expenses
+        expenseData={expenses}
       />
-      <ExpenseItem
-        expenseData={expenses[1]}
-      />
+
+
     </div>
   );
 }
