@@ -7,15 +7,14 @@ const Expenses = (props) => {
 
     return (
         <Card className='expenses'>
-           {/*  <ExpenseItem expenseData={expenseData[0]} /> */}
 
             {expenseData.map(expense => {
                 return (<ExpenseItem
                     date={expense.date}
                     title={expense.title}
                     price={expense.price}
-                    />)
-                })} 
+                />)
+            })}
 
         </Card>
     )
